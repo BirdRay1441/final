@@ -1,0 +1,39 @@
+{% extends 'my_app/bars.html' %}
+{% load static %}
+<html lang="en">
+
+<head>
+    {%block head_block%}
+    <link rel = "stylesheet" href= "{% static 'style/login_teach.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%endblock%}
+</head>
+
+<body>
+    {%block body_block%}
+    <div class="form">
+        <form class="rec" id="rectangle">
+            <p>Вход для образовательного учреждения</p>
+            <div class="vv">
+                <div class="f">
+                    <p class="note">Название учреждения</p>
+                    <input class="input" type="text" maxlength="200">
+        
+                    <p class="note">Пароль</p>
+                <input class="input" type="text" maxlength="200">
+                </div>
+
+                <div>
+                    <img src="static/mon1.png" class="monkey" />
+                </div>
+
+            </div>
+                    
+
+        </form>
+    </div>
+    {%endblock%}
+</body>
+</html>

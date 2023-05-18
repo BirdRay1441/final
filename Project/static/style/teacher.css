@@ -1,0 +1,244 @@
+html {
+    background-color: beige;
+}
+
+span {
+    color: rgb(167, 130, 3);
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 13%;
+    font-size: 55px;
+    position: relative;
+    width: 100%;
+}
+
+.aria {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+.descr {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    margin-top: 20%;
+    margin-left: -100%;
+}
+
+.top {
+    margin-left: 10%;
+}
+
+.bg{
+    margin-top: -3%;
+    width: 40%;
+    margin-left: 60%;
+}
+.strelka {
+    object-fit: cover;
+    object-position: center;
+    margin-left: 47%;
+    width: 10%;
+    margin-top: -3%;
+}
+
+.text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+#rectangle{
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    background-color: rgb(255, 220, 106);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.note{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.input{
+    height: 30px;
+    width: 80%;
+    border-radius: 15px;
+    border-style:none;
+}
+
+.input2{
+    height: 30px;
+    width: 80%;
+    border-radius: 15px;
+}
+
+.input:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+.enter{
+    margin-left: 30%;
+    width: 40%;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(203, 84, 0);
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    border: none;
+}
+
+.enter:hover{
+    background-color: rgb(242, 139, 66);
+}
+
+.attent{
+    margin-left: 2%;
+    font-size: smaller;
+}
+
+.nadp{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    margin-left: 45%;
+    margin-top: 5%;
+}
+
+.my_course {
+    margin-left: 10%;
+    border-style: dashed;
+    border-radius: 15px;
+    width: 400px;
+}
+
+.zag {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    margin-left: 30%;
+}
+
+.plan{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-left: 33%;
+    margin-top: 5%;
+}
+
+.my_courses{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.title_course {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-left: -11%;
+    width: 90%;
+}
+
+.photo_img {
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+    width: 90%;
+
+    padding: 15px;
+    padding-left: 15px;
+}
+
+.top {
+    margin-top: -7%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo_img {
+    object-fit: cover;
+    object-position: center;
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 8%;
+}
+
+.bottom {
+    width: 100px;
+    margin-top: -14%;
+    margin-left: 1%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+.time {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: #727272;
+}
+
+.rate {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: #ffbc03;
+}
+
+.course_price {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 15px;
+    margin-top: -7%;
+}
+
+.status{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 15px;
+    padding-bottom: 1px;
+    margin-top: -7%;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(167, 130, 3);
+    border-radius: 15px;
+    position: relative;
+}
+
+.net {
+    object-fit: cover;
+    object-position: center;
+    width: 5%;
+    height: 5%;
+    margin-top: 3%;
+    margin-left: 1%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    align-items: baseline;
+    margin-left: 2%;
+}
+
+.mail {
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+/* .team {
+    margin-left: 8%;
+    margin-top: 3%;
+    margin-bottom: 4%;
+} */

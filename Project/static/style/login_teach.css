@@ -1,0 +1,38 @@
+
+input{
+    width: 50%;
+    height: 30px;
+    margin-top: 3%;
+    border-radius: 7px;
+    border: none;
+}
+
+.uptop{
+    display: flex;
+    flex-direction: row;
+}
+
+.main_logo{
+    object-fit: cover;
+    object-position: center;
+    width: 5%;
+    height: 5%;
+    margin-left: 10%;
+}
+
+.name_site{
+    margin-left: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.back{
+    margin-left:60%;
+}
+
+.team{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-left: 80%;
+    margin-top: 0px;
+}

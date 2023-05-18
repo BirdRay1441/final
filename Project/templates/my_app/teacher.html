@@ -1,0 +1,133 @@
+{% extends 'my_app/bars.html' %}
+{% load static %}
+<html lang="en">
+
+<head>
+    {%block head_block%}
+    <link rel="stylesheet" href="{% static 'style/teacher.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {%endblock%}
+</head>
+
+<body>
+    {%block body_block%}
+    <div class="main">
+        <div class="top">
+            <h1>Все дороги ведут к <span>Heightline</span></h1>
+            <p class="descr">Та самая платформа, где ваши курсы заметят.
+                Удобный интефейс, большой поток клиентов разных возрастных групп - всё это выведет ваши образовательные
+                проекты на широкую аудиторию.</p>
+        </div>
+        <img src="{%static 'media/hand.png'%}" class="bg" />
+        <img src="{%static 'media/str.png'%}" class="strelka" />
+    </div>
+
+    <div class="text">Всего <span>2 шага</span> до публикации вашего курса:</div>
+    <ol class="plan">
+        <li>Оставьте заявку, заполнив все данные корректно</li>
+        <li>Дождитесь рассмотрения заявки модератором</li>
+    </ol>
+    <div class="form">
+        <form class="rec" id="rectangle" enctype="multipart/form-data" method="POST">
+            {{courses_form.as_p}}
+            {%csrf_token%}
+            <!-- <ol>
+                <li>
+                    <p class="note">Ваше ФИО (оно может понадобиться при проверке модератором вашего курса)</p>
+                    <input class="input" type="text" maxlength="200">
+                </li>
+                <li>
+                    <p class="note">Название вашей онлайн-школы</p>
+                    <input class="input" type="text" maxlength="200">
+                </li>
+                <li>
+                    <p class="note">Прикрепите логотип вашей онлайн-школы (при наличии)</p>
+                    <input class="input2" type="file" style="border-radius: 0px;">
+                </li>
+                <li>
+                    <p class="note">Название вашего курса</p>
+                    <input class="input" type="text" maxlength="200">
+                </li>
+                <li>
+                    <p class="note">Выберите направление вашего курса (или наиболее близкое)</p>
+                    <select multiple="multiple" size="3">
+                        <option> Графический дизайн</option>
+                        <option> Программирование</option> 
+                        <option> Строительство</option> 
+                      </select>
+                </li>
+                <li>
+                    <p class="note">Прикрепите фотографию-заставку вашего курса</p>
+                    <input class="input2" type="file" style="border-radius: 0px;">
+                </li>
+                <li>
+                    <p class="note">Прикрепите видеовизитку вашего курса (до 2 минут)</p>
+                    <input class="input2" type="file" style="border-radius: 0px;">
+                </li>
+                <li>
+                    <p class="note">Укажите длительность вашего курса</p>
+                    <input class="input" type="text" maxlength="2000">
+                </li>
+                <li>
+                    <p class="note">Укажите цену вашего курса</p>
+                    <input class="input" type="number" maxlength="200000">
+                </li>
+            </ol> -->
+            <input type="submit" name="" id="post_curs">
+            <!-- <button class="enter">Отправить</button> -->
+            <p class="attent">*Перед отправкой убедитесь, что все поля заполнены корректно! Это может повлиять на решение модератора.</p>
+        </from>
+    </div>
+    <p class="nadp">Мои курсы</p>
+    <div class="my_courses">
+        {% for pic in teach_courses %}
+            <div class="my_course">
+                <div class="photo"><img src="../media/{{pic.image}}" alt="" class="photo_img"></div>
+                <div class="top">
+                    <p class="title_course">{{pic.course_name}}</p>
+                    <p>{{pic.category}}</p>
+                </div>
+                <div class="bottom">
+                    <p class="time">{{pic.duration}}</p>
+                </div>
+                <p class="course_price">{{pic.price}}</p>
+                <p class="status">{{pic.status}}</p>
+            </div>
+         {% endfor %}
+        <div class="my_course">
+            
+            <div class="photo"><img src="static/с1.jpeg" class="photo_img" /></div>
+            <div class="top">
+                <p class="title_course">Курс по графическому дизайну</p>
+                <div class="logo_school"><img src="static/proc.png" class="logo_img" /></div>
+            </div>
+            <div class="bottom">
+                <p class="time">13 недель</p>
+                <p class="rate">5,5</p>
+            </div>
+            <p class="course_price">15 900</p>
+            <p class="status">На модерации</p>
+    </div>
+    <div class="my_course">
+        <div class="photo"><img src="static/с1.jpeg" class="photo_img" /></div>
+        <div class="top">
+            <p class="title_course">История графического дизайна</p>
+            <div class="logo_school"><img src="static/proc.png" class="logo_img" /></div>
+        </div>
+        <div class="bottom">
+            <p class="time">13 недель</p>
+            <p class="rate">5,5</p>
+        </div>
+        <p class="course_price">15 900</p>
+        <p class="status">Опубликован</p>
+    </div>
+        
+    </div>
+
+    {%endblock%}
+</body>
+
+</html>

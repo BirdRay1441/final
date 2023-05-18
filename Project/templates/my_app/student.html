@@ -1,0 +1,107 @@
+{% extends 'my_app/bars.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    {%block head_block%}
+    <link rel="stylesheet" href="{% static 'style/student.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсы</title>
+    {%endblock%}
+</head>
+
+<body>
+    {% block body_block %}
+    <div class="main">
+        <div class="top">
+            <h1>Все дороги ведут к <span>Heightline</span></h1>
+            <p class="descr">Хочешь прокачать свои скилы? Или может быть получить новую профессию? А как насчёт того,
+                чтобы заняться новым хобби?
+                Листай вниз, чтобы найти тот самый курс!</p>
+            </div>
+        <img src="{% static 'media/str.png' %}" class="strelka" />
+        <img src="{% static 'media/mon1.png' %}" class="monkey" />
+    </div>
+
+    <img src="{% static 'media/mon3.png' %}" class="monkey1" />
+
+    <div class="filter">
+        <p class="filter-text">Помоги нам подобрать курсы специально для тебя</p>
+        <div class="aria">
+            <div class="var">
+                <div class="logo_course">
+                </div>
+                <img src="{% static 'media/graf.png' %}" class="logo_course_img" />
+                <p class="title_var">Графический дизайн</p>
+            </div>
+
+            <div class="var">
+                <div class="logo_course">
+                    <img src="{% static 'media/prog.png' %}" class="logo_course_img" />
+                </div>
+                <p class="title_var1">Программирование</p>
+            </div>
+
+            <div class="var">
+                <div class="logo_course">
+                    <img src="{% static 'media/building.png' %}" class="logo_course_img" />
+                </div>
+                <p class="title_var2">Строительство</p>
+            </div>
+        </div>
+
+        <hr class="line"/>
+
+        <div class="nazv">Укажите диапазон цен</div>
+
+        <div id="rectangle" class="filter_price">
+            <div class="prices">
+                <p class="name_price">Максимальная цена</p>
+                <p class="name_price">Минимальная цена</p>
+            </div>
+            <div class="price">
+                <input type="number" class="min_max">
+                <input type="number" class="min_max">
+            </div>
+        </div>
+
+        <hr class="line"/>
+
+        <div class="nazv">Выберете онлайн-школу</div>
+
+        <div class="schools">
+                {% for school in institution_list %}
+                <div class="school">
+                    <div class="logo_course">
+                        <img src="../media/{{school.image}}" class="logo_school_img" />
+                    </div>
+                    <p class="title_school">{{school.institution_name}}</p>
+                </div>
+                {% endfor %}
+        </div>
+
+    </div>
+
+    <p class="zag">Курсы специально для вас:</p>
+
+    <div class="list">
+        {% for pic in student_courses %}
+            <div class="course-container">
+                <div class="photo"><img src="../media/{{pic.image}}" alt="" class="photo_img"></div>
+                <div class="top">
+                    <p class="title_course">{{pic.course_name}}</p>
+                    <p>{{pic.category}}</p>
+                </div>
+                <div class="bottom">
+                    <p class="time">{{pic.duration}}</p>
+                </div>
+                <p class="course_price">{{pic.price}}</p>
+            </div>
+         {% endfor %}
+    </div>
+
+    {% endblock %}
+</body>
+
+</html>

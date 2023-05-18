@@ -1,0 +1,229 @@
+html{
+    background-color: beige;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60;
+    width: 50%;
+    margin-top: 12%;
+}
+/* .back{
+    margin-top: 1%;
+    margin-left: 90%;
+    height: 5%;
+    width: 5%;
+    cursor: pointer;
+} */
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 100px;
+}
+
+.games{
+    width: 20%;
+    height: 100%;
+    margin-right: 40px;
+    margin-top: 10%;
+}
+
+.project{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 40px;
+margin-left: 30%;
+}
+
+.line{
+    margin-top: 60px;
+    margin-top: 40px;
+}
+
+
+.course {
+    margin-left: 10%;
+    border-style: dashed;
+    border-radius: 15px;
+    width: 400px;
+    height: 530px;
+
+}
+
+.courses{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.title_course {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    width: 400px;
+    margin-left: -35%;
+    cursor: pointer;
+}
+
+.photo_img {
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+    width: 90%;
+
+    padding: 15px;
+    padding-left: 15px;
+}
+
+.top {
+    margin-top: -7%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo_img {
+    object-fit: cover;
+    object-position: center;
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.bottom {
+    width: 100px;
+    margin-top: -14%;
+    margin-left: 1%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.status{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 15px;
+    padding-bottom: 1px;
+    margin-top: -7%;
+}
+
+.time {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: #727272;
+}
+
+.rate {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: #ffbc03;
+}
+
+.course_price {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 15px;
+    margin-top: -7%;
+}
+
+.resh{
+    padding: 13px;
+    margin-left: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    border-radius: 15px;
+    border-width: 1px;
+    cursor: pointer;
+
+}
+
+.resh1{
+    padding: 13px;
+    margin-left: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    border-radius: 15px;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.resh1:hover{
+    background-color: rgb(96, 255, 71);
+}
+
+.resh:hover{
+    background-color: rgb(255, 28, 40);
+}
+
+.reshen{
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(167, 130, 3);
+    border-radius: 15px;
+    position: relative;
+}
+
+.net {
+    object-fit: cover;
+    object-position: center;
+    width: 5%;
+    height: 5%;
+    margin-top: 3%;
+    margin-left: 1%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    align-items: baseline;
+    margin-left: 2%;
+}
+
+.mail {
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+/* .team {
+    margin-left: 8%;
+    margin-top: 3%;
+    margin-bottom: 4%;
+} */
+
+/* .uptop{
+    display: flex;
+    flex-direction: row;
+} */
+
+/* .main_logo{
+    object-fit: cover;
+    object-position: center;
+    width: 5%;
+    height: 5%;
+    margin-left: 10%;
+} */
+
+/* .name_site{
+    margin-left: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+} */
+
+/* .back{
+    margin-left:60%;
+} */
+
+/* .team{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-left: 80%;
+    margin-top: 0px;
+} */

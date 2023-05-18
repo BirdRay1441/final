@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style/bars.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200&display=swap"
+        rel="stylesheet">
+    {% block head_block %} {% endblock %}
+    <title>Название</title>
+</head>
+
+<body>
+    <div class="uptop">
+        <img src="{% static 'media/logo_site.png' %}" class="main_logo">
+        <p class="name_site">Monkey_vector</p>
+        <a href="../" style="margin-left: 60%;"><img src="{% static 'media/strelka.png' %}" class="back"></a>
+    </div>
+    {% block body_block %}
+    {% endblock %}
+    <footer>
+        <div class="contact">
+            <img src="{% static 'media/f.png' %}" class="net" />
+            <img src="{% static 'media/you.png' %}" class="net" />
+            <img src="{% static 'media/inst.png' %}" class="net" />
+            <img src="{% static 'media/twit.png' %}" class="net" />
+            <!-- <img src="static/twit.png" class="net" /> -->
+            <p class="team">Monkey_vector</p>
+        </div>
+    </footer>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/.mainn.js"></script> -->
+
+</body>
+
+</html>

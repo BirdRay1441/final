@@ -1,0 +1,68 @@
+{% extends 'my_app/bars.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    {%block head_block%}
+    <link rel = "stylesheet" href="{% static 'style/admin.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'style/index.css' %}"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {%endblock%}
+</head>
+<body>
+    {%block body_block%}
+    <!-- <div class="uptop">
+        <img src="{% static 'media/logo_site.png' %}" class="main_logo">
+        <p class="name_site">Monkey_vector</p>
+        <img src="{% static 'media/strelka.png' %}" class="back">
+    </div> -->
+    <div class="top">
+        <h1>Здравствйте! Вы зашли на сайт Heightline в качестве администратора. 
+            Оставаясь на сайте вы принимаете  следующие <a href=admin_form.html>нормы и правила</a>
+        </h1>
+        <img src="{% static 'media/badge.png' %}" class="games">
+    </div>
+
+    <hr class="line"/>
+    
+    <p class="project">Проекты на модерацию</h1>
+        <div class="courses">
+            {% for pic in admin_courses %}
+            <div class="course">
+                <div class="photo"><img src="../media/{{pic.image}}" alt="" class="photo_img"></div>
+                <div class="top">
+                    <p class="title_course">{{pic.course_name}}</p>
+                    <p>{{pic.category}}</p>
+                </div>
+                <div class="bottom">
+                    <p class="time">{{pic.duration}}</p>
+                </div>
+                <p class="course_price">{{pic.price}}</p>
+                <div class="reshen">
+                    <button class="resh1">Опубликовать</button>
+                    <button class="resh">Удалить</button>
+                </div>
+            </div>
+         {% endfor %}
+            <!-- <div class="course">
+                <div class="photo"><img src="{% static 'media/dis.jpg' %}" class="photo_img" /></div>
+                <div class="top">
+                    <p class="title_course">Курс по графическому дизайну</p>
+                    <link rel = "stylesheet" href= "{% static 'media/proc.png' %}" class="logo_img">
+                </div>
+                <div class="bottom">
+                    <p class="time">13 недель</p>
+                    <p class="rate">5,5</p>
+                </div>
+                <p class="course_price">15 900</p>
+                <div class="reshen">
+                    <button class="resh1">Опубликовать</button>
+                    <button class="resh">Удалить</button>
+                </div> -->
+        </div>
+    </div>
+{%endblock%}
+</body>
+</html>

@@ -1,0 +1,72 @@
+{% extends 'my_app/bars.html' %}
+{% load static %}
+<html lang="en">
+
+<head>
+    {%block head_block%}    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style/index.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200&display=swap"
+        rel="stylesheet">
+    <title>Название</title>
+    {%endblock%}
+</head>
+
+<body>
+    {% block body_block %}
+    <div class="name">
+        <h1>Heightline</h1>
+        <h2 class="slogan">Здесь ты найдёшь себя!</h2>
+    </div>
+    <div class="left">
+        <div class="button">
+            <a href="{% url 'student' %}">
+            <div id="rectangle" class="rec">
+                <div class="but">
+                    <div class="lefty">
+                        <h2>Ученик</h2>
+                        <p>Хочешь получить новую профессию? Или повысить свою квалификацию? А может наконец-то найти хобби себе по душе? 
+                            Заходи, смотри информацию о курсах и школах, получай лучшее образование от топовых онлайн-платформ
+                        </p>
+                    </div>
+                    <img src="{% static 'media/moder.png' %}" class="icon" />
+                </div>
+            </div>
+            </a>
+            <div id="rectangle" class="rec">
+                <div class="but">
+                    <div class="lefty">
+                        <h2>Учебное заведение</h2>
+                        <p>Удобная платформа для публикации твоих онлайн-курсов, которая привлечёт учеников!
+                        </p>
+                        <button class="ed">Регистрация</button>
+                        <button class="ed">Вход</button>
+                    </div>
+                    <img src="{% static 'media/elearning.png' %}" class="icon" />
+                </div>
+            </div>
+            <a href="{% url 'admins' %}">
+            <div id="rectangle" class="rec">
+                <div class="but">
+                    <div class="lefty" style="width: 100%">
+                        <h2 class="moder" style="width: 100%; margin-left: 25%;">Администратор-модератор</h2>
+                    </div>
+                </div>
+                <img src="{% static 'media/badge.png' %}" class="icon_admin" />
+            </div>
+            </a>
+        </div>
+    </div>
+    {% endblock %}
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/.mainn.js"></script>
+
+</body>
+
+</html>
